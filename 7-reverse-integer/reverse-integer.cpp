@@ -7,6 +7,6 @@ public:
             x/=10;
         }
          if (rev < INT_MIN || rev > INT_MAX) return 0;
-         else return rev;
+          return rev;
     }
 };
