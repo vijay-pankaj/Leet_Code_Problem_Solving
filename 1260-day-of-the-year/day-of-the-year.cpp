@@ -5,7 +5,7 @@ public:
  }
 
     int dayOfYear(string date) {
-        int year = stoi( date.substr(0 , 4));
+    int year = stoi( date.substr(0 , 4));
     int month = stoi(date.substr(5 , 7));
     int day = stoi(date.substr(8 , 10));
 
