@@ -11,9 +11,7 @@ public:
        for(int i=0;i<s.size();i++){
         if(s[i]>='0'&&s[i]<='9'){
            int newNum=s[i]-'0';
-            if(newNum>secMax && newNum!=max){
-                secMax=newNum;
-            }
+            if(newNum>secMax && newNum!=max) secMax=newNum;
         }
        }
        return secMax;
