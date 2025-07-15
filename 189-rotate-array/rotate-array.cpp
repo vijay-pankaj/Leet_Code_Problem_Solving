@@ -4,8 +4,8 @@ public:
         int s = 0, n = nums.size();
         vector<int> arr(n);
         for (int i = 0; i < nums.size(); i++) {
-            s = (k + i) % n;
-            arr[s] = nums[i];
+            // s = (k + i) % n;
+            arr[(k+i)%n] = nums[i];
             s++;
         }
         nums = arr;
