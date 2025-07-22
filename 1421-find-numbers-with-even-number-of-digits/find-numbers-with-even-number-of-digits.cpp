@@ -11,10 +11,7 @@ bool countDigit(int num){
     int findNumbers(vector<int>& nums) {
         int count=0;
         for(int i=0; i<nums.size();i++){
-            if(nums[i]>0 && nums[i]<9)i++;
-            else{
-                if(countDigit(nums[i]))count++;
-            }
+            if(countDigit(nums[i]))count++;
         }
         return count;
     }
