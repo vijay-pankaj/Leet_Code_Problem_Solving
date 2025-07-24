@@ -8,8 +8,10 @@ public:
             char currentChar = firstStr[i];
 
             for (int j = 1; j < strs.size(); j++) {
-               if (i >= strs[j].size() || strs[j][i] != currentChar)
-                    return strs[0].substr(0, i);
+               if (i >= strs[j].size() || strs[j][i] != currentChar){
+                 return strs[0].substr(0, i);
+               }
+                   
             }
             
         }
