@@ -15,8 +15,8 @@ public:
         }
 
         string result = "";
-        for (string s : numStr) {
-            result += s;
+        for (string str : numStr) {
+            result += str;
         }
         return result;
     }
