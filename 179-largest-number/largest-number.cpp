@@ -1,8 +1,6 @@
 class Solution {
 public:
-    static bool compare(string a, string b) {
-        return a + b > b + a;
-    }
+    static bool compare(string a, string b) { return a + b > b + a; }
 
     string largestNumber(vector<int>& nums) {
         vector<string> numStr;
@@ -12,15 +10,14 @@ public:
 
         sort(numStr.begin(), numStr.end(), compare);
 
-        if (numStr[0] == "0"){
+        if (numStr[0] == "0") {
             return "0";
-        } 
+        }
 
         string result = "";
         for (string s : numStr) {
             result += s;
         }
-
         return result;
     }
 };
