@@ -12,7 +12,9 @@ public:
 
         sort(numStr.begin(), numStr.end(), compare);
 
-        if (numStr[0] == "0") return "0";
+        if (numStr[0] == "0"){
+            return "0";
+        } 
 
         string result = "";
         for (string s : numStr) {
