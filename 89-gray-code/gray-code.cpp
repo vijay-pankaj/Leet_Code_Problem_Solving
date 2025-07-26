@@ -1,12 +1,12 @@
 class Solution {
 public:
     vector<int> grayCode(int n) {
-        vector<int> result;
+        vector<int>grayCodeSeq;
         int total=pow(2,n); 
         for (int i = 0; i < total; i++) {
-            result.push_back(i ^ (i >> 1));
+            grayCodeSeq.push_back(i ^ (i >> 1));
         }
 
-        return result;
+        return grayCodeSeq;
     }
 };
