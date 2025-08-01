@@ -13,7 +13,9 @@ public:
             freq[num]++;
         }
         for(int i=500; i>=1; i--){
-            if(freq[i]==i)return i;
+            if(freq[i]==i){
+                return i;
+            }
         }
         return -1;
         // int maxLucky=-1;
