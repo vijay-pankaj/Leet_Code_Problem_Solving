@@ -16,22 +16,3 @@ public:
         return -1;
     }
 };
-
-// class Solution {
-// public:
-
-//     bool isuniqChar(string s,char ch){
-//         int count=0;
-//         for(int i=0; i<s.size(); i++){
-//             if(s[i]==ch)count++;
-//             if(count>1)return false;
-//         }
-//         return true;
-//     }
-//     int firstUniqChar(string s) {
-//         for (int i = 0; i < s.size(); i++) {
-//             if(isuniqChar(s,s[i]))return i;
-//         }
-//         return -1;
-//     }
-// };
