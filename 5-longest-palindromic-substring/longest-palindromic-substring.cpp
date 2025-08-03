@@ -16,7 +16,6 @@ public:
                 l--;
                 r++;
             }
-
             l = i;
             r = i + 1;
             while (l >= 0 && r < s.size() && s[l] == s[r]) {
