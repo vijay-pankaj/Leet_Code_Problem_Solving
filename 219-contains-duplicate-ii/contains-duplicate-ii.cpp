@@ -10,8 +10,7 @@ public:
         }
         return false;
     }
-    bool containsNearbyDuplicate(vector<int>& nums, int k) {
-        
+    bool containsNearbyDuplicate(vector<int>& nums, int k) {  
         if (!checkDuplicates(nums)) {
             return false;
         }
