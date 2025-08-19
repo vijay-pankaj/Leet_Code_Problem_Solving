@@ -4,7 +4,7 @@ public:
         long long res = 0;
         long long zeroCount = 0;
         for (int i = 0; i < nums.size(); i++) {
-            if (nums[i] == 0) {
+            if (nums[i] == 0){
                 zeroCount++;
                 res += zeroCount;
             } else {
