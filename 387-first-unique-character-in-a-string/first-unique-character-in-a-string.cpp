@@ -1,36 +1,32 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-        vector<int> repeatChar(26, 0);
-
-        for (char ch : s) { 
-            repeatChar[ch - 'a']++;
+        vector<int>freq(26,0);
+        for(char c:s){
+            freq[c-'a']++;
         }
-
-        for (int i = 0; i < s.size(); i++) {
-            if (repeatChar[s[i] - 'a'] == 1) {
-                return i;
-            }
+        for(int i=0; i<s.length(); i++){
+            if(freq[s[i]-'a']==1)return i;
         }
-
         return -1;
     }
 };
-// class Solution {
-// public:
 
-//     bool isuniqChar(string s,char ch){
-//         int count=0;
-//         for(int i=0; i<s.size(); i++){
-//             if(s[i]==ch)count++;
-//             if(count>1)return false;
-//         }
-//         return true;
-//     }
-//     int firstUniqChar(string s) {
-//         for (int i = 0; i < s.size(); i++) {
-//             if(isuniqChar(s,s[i]))return i;
-//         }
-//         return -1;
-//     }
-// };
+/*
+class Solution {
+public:
+    int firstUniqChar(string s) {
+        for(int i=0; i<s.length(); i++){
+            int count=0;
+            for(int j=0; j<s.length(); j++){
+                if(s[i]==s[j])count++;
+            }
+            if(count==1){
+                return i;
+                break;
+            }
+        }
+        return -1;
+    }
+};
+*/
